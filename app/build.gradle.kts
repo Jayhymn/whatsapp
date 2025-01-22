@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.wakeupdev.whatsapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.wakeupdev.whatsapp"
         minSdk = 23
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -49,6 +49,20 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
+    //di
+    implementation(libs.koin.android)
+    testImplementation(libs.koin.test.junit4)
+
+    //datastore
+    implementation(libs.androidx.datastore.preferences)
+
+    //ktor
+    implementation(libs.ktor.client.okhttp)
+    implementation(libs.ktor.client.core)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
