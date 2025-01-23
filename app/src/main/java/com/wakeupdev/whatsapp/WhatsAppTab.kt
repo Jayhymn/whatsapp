@@ -1,6 +1,7 @@
 package com.wakeupdev.whatsapp
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
@@ -12,6 +13,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.wakeupdev.whatsapp.calls.CallsScreen
+import com.wakeupdev.whatsapp.chats.ChatsScreen
+import com.wakeupdev.whatsapp.statuses.StatusScreen
 import com.wakeupdev.whatsapp.ui.theme.WhatsAppTheme
 import kotlinx.coroutines.launch
 
@@ -42,9 +46,13 @@ fun WhatsAppTab(modifier: Modifier = Modifier) {
 
         HorizontalPager(
             state = pagerState,
-            modifier = Modifier,
+            modifier = Modifier.fillMaxSize(),
         ) {
-
+            page ->  when(page){
+                0 -> ChatsScreen()
+                1 -> CallsScreen()
+                2 -> StatusScreen()
+            }
         }
     }
 }
