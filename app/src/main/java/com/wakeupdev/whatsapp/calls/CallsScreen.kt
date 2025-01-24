@@ -4,7 +4,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.wakeupdev.whatsapp.chats.ChatsScreen
 import com.wakeupdev.whatsapp.ui.theme.WhatsAppTheme
 
 @Composable
