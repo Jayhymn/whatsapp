@@ -5,6 +5,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.wakeupdev.whatsapp.chats.data.Thread
+import com.wakeupdev.whatsapp.chats.data.dummy
 import com.wakeupdev.whatsapp.ui.theme.WhatsAppTheme
 
 @Composable
@@ -22,10 +23,10 @@ fun ChatsScreen(modifier: Modifier = Modifier, threads: List<Thread>) {
     }
 }
 
-@Preview
+@Preview(showBackground = true)
 @Composable
 private fun ChatsScreenPrev() {
     WhatsAppTheme {
-        ChatsScreen(threads = emptyList())
+        ChatsScreen(threads = dummy.sampleThreads)
     }
 }

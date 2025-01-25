@@ -1,6 +1,6 @@
 package com.wakeupdev.whatsapp.chats.data
 
-data class Chat(
+data class Message(
     val id: Int,
     val senderTitle: String,
     val recipient: String,
