@@ -1,4 +1,4 @@
-package com.wakeupdev.whatsapp.ui
+package com.wakeupdev.whatsapp.ui.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -13,6 +13,7 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.wakeupdev.whatsapp.ui.components.WhatsAppTab
 import com.wakeupdev.whatsapp.ui.theme.WhatsAppTheme
 
 class WhatsAppActivity : ComponentActivity() {

@@ -1,4 +1,4 @@
-package com.wakeupdev.whatsapp.components
+package com.wakeupdev.whatsapp.ui.components
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.ButtonColors

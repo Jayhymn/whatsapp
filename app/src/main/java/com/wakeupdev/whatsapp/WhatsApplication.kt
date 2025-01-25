@@ -6,6 +6,7 @@ import com.wakeupdev.whatsapp.calls.data.CallRepository
 import com.wakeupdev.whatsapp.calls.data.CallRepositoryImpl
 import com.wakeupdev.whatsapp.chats.data.ChatRepository
 import com.wakeupdev.whatsapp.chats.data.ChatRepositoryImpl
+import com.wakeupdev.whatsapp.di.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -21,10 +22,4 @@ class WhatsApplication : Application() {
             modules(appModule)
         }
     }
-}
-
-val appModule = module {
-    single<ChatRepository> { ChatRepositoryImpl() }
-    single<CallRepository> { CallRepositoryImpl() }
-    single{ httpClient }
 }
