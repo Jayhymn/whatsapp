@@ -1,4 +1,4 @@
-package com.wakeupdev.whatsapp
+package com.wakeupdev.whatsapp.database
 
 import android.content.Context
 import androidx.datastore.preferences.core.booleanPreferencesKey

@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
 //    kotlin("jvm") version "2.1.0"
     kotlin("plugin.serialization") version "2.1.0"
+    id ("com.google.devtools.ksp") version "2.1.0-1.0.29"
 }
 
 android {
@@ -58,6 +59,13 @@ dependencies {
 
     //datastore
     implementation(libs.androidx.datastore.preferences)
+
+    //room database
+    ksp(libs.androidx.room.compiler)
+    annotationProcessor(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
+    testImplementation(libs.androidx.room.testing)
+    implementation(libs.androidx.room.paging)
 
     //ktor
     implementation(libs.ktor.client.okhttp)

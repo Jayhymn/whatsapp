@@ -1,4 +1,4 @@
-package com.wakeupdev.whatsapp
+package com.wakeupdev.whatsapp.ui
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize

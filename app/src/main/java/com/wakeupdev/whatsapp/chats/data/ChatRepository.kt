@@ -1,21 +1,23 @@
 package com.wakeupdev.whatsapp.chats.data
 
+import com.wakeupdev.whatsapp.database.entities.MessageEntity
+
 interface ChatRepository {
-    fun getChat(recipient: String): List<Message>
-    fun saveChat(chat: Message)
-    fun deleteChat(chat: Message)
+    fun getChat(recipient: String): List<MessageEntity>
+    fun saveChat(chat: MessageEntity)
+    fun deleteChat(chat: MessageEntity)
 }
 
 class ChatRepositoryImpl : ChatRepository {
-    override fun getChat(recipient: String): List<Message> {
+    override fun getChat(recipient: String): List<MessageEntity> {
         TODO("Not yet implemented")
     }
 
-    override fun saveChat(chat: Message) {
+    override fun saveChat(chat: MessageEntity) {
         TODO("Not yet implemented")
     }
 
-    override fun deleteChat(chat: Message) {
+    override fun deleteChat(chat: MessageEntity) {
         TODO("Not yet implemented")
     }
 
