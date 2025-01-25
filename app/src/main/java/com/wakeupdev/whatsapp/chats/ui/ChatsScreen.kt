@@ -13,7 +13,7 @@ fun ChatsScreen(modifier: Modifier = Modifier, threads: List<Thread>) {
     Column {
         threads.forEach {
             ChatItem(
-                chatTitle = it.senderTitle,
+                chatTitle = it.contactName,
                 lastChat = it.lastChat,
                 dateTime = it.dateTime,
                 chatCount = it.unreadCount.toString(),

@@ -4,8 +4,8 @@ object dummy {
     val sampleThreads = listOf(
         Thread(
             id = 1,
-            senderTitle = "John Doe",
-            recipient = "Me",
+            contactName = "John Doe",
+            isSent = true,
             lastChat = "Hey, how are you?",
             dateTime = "10:45 AM",
             profileImageUrl = "",
@@ -13,8 +13,8 @@ object dummy {
         ),
         Thread(
             id = 2,
-            senderTitle = "Jane Smith",
-            recipient = "Me",
+            contactName = "Jane Smith",
+            isSent = false,
             lastChat = "Are we still meeting later?",
             dateTime = "9:30 AM",
             profileImageUrl = "",

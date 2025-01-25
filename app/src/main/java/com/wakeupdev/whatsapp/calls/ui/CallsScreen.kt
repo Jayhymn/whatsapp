@@ -1,4 +1,4 @@
-package com.wakeupdev.whatsapp.calls
+package com.wakeupdev.whatsapp.calls.ui
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable

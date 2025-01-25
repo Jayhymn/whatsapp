@@ -19,7 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
-import com.wakeupdev.whatsapp.calls.CallsScreen
+import com.wakeupdev.whatsapp.calls.ui.CallsScreen
 import com.wakeupdev.whatsapp.chats.data.dummy
 import com.wakeupdev.whatsapp.chats.ui.ChatsScreen
 import com.wakeupdev.whatsapp.statuses.StatusScreen
